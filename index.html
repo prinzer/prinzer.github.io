@@ -14,6 +14,10 @@
       width: 100%;
       height: 100%;
   }
+	  .fakeimg {
+      height: 200px;
+      background: #aaa;
+  }
   </style>
 </head>
 <body>
@@ -80,8 +84,154 @@
   </a>
  
 </div>
-<div class="container-fluid">
+<div class="container" align="center">
+	<div class="row">
+		<div class="col">
+			 <h2>图片卡片</h2>
+				<p>图片在头部 (card-img-top):</p>
+				<div class="card" style="width:400px">
+					<img class="card-img-top" src="http://static.runoob.com/images/mix/img_avatar.png" alt="Card image" style="width:100%">
+					<div class="card-body">
+						<h4 class="card-title">John Doe</h4>
+						<p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+						<a href="#" class="btn btn-primary">See Profile</a>
+					</div>
+				</div>
+		</div>
+		<div class="col">
+			  <p>图片在底部(card-img-bottom):</p>
+			<div class="card" style="width:400px">
+			  <div class="card-body">
+			    <h4 class="card-title">Jane Doe</h4>
+			    <p class="card-text">Some example text some example text. Jane Doe is an architect and engineer</p>
+			    <a href="#" class="btn btn-primary">See Profile</a>
+			  </div>
+			  <img class="card-img-bottom" src="http://static.runoob.com/images/mix/img_avatar.png" alt="Card image" style="width:100%">
+			</div>
+		</div>
+	</div>
+	<div class="">
+		<br>
+		<h3>table</h3>
+		  <table class="table table-hover">
+    <thead class="thead-light">
+      <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>John</td>
+        <td>Doe</td>
+        <td>john@example.com</td>
+      </tr>
+      <tr>
+        <td>Mary</td>
+        <td>Moe</td>
+        <td>mary@example.com</td>
+      </tr>
+      <tr>
+        <td>July</td>
+        <td>Dooley</td>
+        <td>july@example.com</td>
+      </tr>
+    </tbody>
+  </table>
+	</div>
+	<div class="">
+		 <h2>堆叠表单</h2>
+  <form>
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" class="form-control" id="email" placeholder="Enter email">
+    </div>
+    <div class="form-group">
+      <label for="pwd">Password:</label>
+      <input type="password" class="form-control" id="pwd" placeholder="Enter password">
+    </div>
+    <div class="form-check">
+      <label class="form-check-label">
+        <input class="form-check-input" type="checkbox"> Remember me
+      </label>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+	</div>
+	<div class="">
+		<h2>模态框实例</h2>
+  <!-- 按钮：用于打开模态框 -->
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+    打开模态框
+  </button>
+   
+  <!-- 模态框 -->
+  <div class="modal fade" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+   
+        <!-- 模态框头部 -->
+        <div class="modal-header">
+          <h4 class="modal-title">模态框头部</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+   
+        <!-- 模态框主体 -->
+        <div class="modal-body">
+          模态框内容..
+        </div>
+   
+        <!-- 模态框底部 -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">关闭</button>
+        </div>
+   
+      </div>
+    </div>
+	</div>
+	<div class="row">
+    <div class="col-sm-4">
+      <h2>关于我</h2>
+      <h5>我的照片:</h5>
+      <div class="fakeimg">这边插入图像</div>
+      <p>关于我的介绍..</p>
+      <h3>一些链接</h3>
+      <p>说明文本</p>
+      <ul class="nav nav-pills flex-column">
+        <li class="nav-item">
+          <a class="nav-link active" href="#">激活状态</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">链接</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">链接</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#">禁用</a>
+        </li>
+      </ul>
+      <hr class="d-sm-none">
+    </div>
+    <div class="col-sm-8">
+      <h2>标题</h2>
+      <h5>副标题</h5>
+      <div class="fakeimg">图像</div>
+      <p>一些文本..</p>
+      <p>菜鸟教程，学的不仅是技术，更是梦想！！！菜鸟教程，学的不仅是技术，更是梦想！！！菜鸟教程，学的不仅是技术，更是梦想！！！</p>
+      <br>
+      <h2>标题</h2>
+      <h5>副标题</h5>
+      <div class="fakeimg">图像</div>
+      <p>一些文本..</p>
+      <p>菜鸟教程，学的不仅是技术，更是梦想！！！菜鸟教程，学的不仅是技术，更是梦想！！！菜鸟教程，学的不仅是技术，更是梦想！！！</p>
+    </div>
+  </div>
 </div>
-
+<div class="container-fluid  text-center" style="margin-bottom:0">
+	<hr >
+  <p>底部内容</p>
+</div>
 </body>
 </html>
